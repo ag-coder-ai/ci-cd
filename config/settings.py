@@ -88,9 +88,12 @@ WSGI_APPLICATION = 'config.wsgi.application'
 import dj_database_url
 from decouple import config
 
+import dj_database_url
+
 DATABASES = {
-    'default': dj_database_url.config(
-        default=config('DATABASE_URL')
+    "default": dj_database_url.config(
+        default="sqlite:///db.sqlite3",
+        conn_max_age=600
     )
 }
 
