@@ -4,6 +4,6 @@ from .views import home
 urlpatterns = [
 
     path('', home, name='home'),
-    path('nav', home, name='navbar'),
+    path('/nav', home, name='navbar'),
 
 ]
