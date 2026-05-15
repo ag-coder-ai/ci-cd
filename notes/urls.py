@@ -1,9 +1,9 @@
 from django.urls import path
-from .views import home
+from .views import home,navbar
 
 urlpatterns = [
 
     path('', home, name='home'),
-    path('/nav', home, name='navbar'),
+    path('nav/', navbar, name='navbar'),
 
 ]
